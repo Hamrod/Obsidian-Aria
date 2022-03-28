@@ -1,4 +1,58 @@
-/* Sets all the text color to red! */
-body {
-    color: red;
+.charactersheet-aria {
+	border-radius: 5px;
+	padding: 10px;
+	background-color: bisque;
+	color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+.charactersheet-aria .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-basis: 100%;
+}
+
+.charactersheet-aria .hr {
+	border-top: 1px solid black;
+	padding-top: 10px;
+}
+
+.charactersheet-aria .title {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.charactersheet-aria .title div {
+	text-transform: none;
+	margin-left: 10px;
+}
+
+.charactersheet-aria .weapon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-basis: 100%;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.charactersheet-aria .circle {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+.charactersheet-aria .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 100%;
+	align-items: center;
+	margin-top: 10px;
 }
