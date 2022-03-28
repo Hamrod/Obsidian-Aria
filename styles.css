@@ -7,16 +7,29 @@
 	flex-direction: column;
 }
 
+.charactersheet-aria .divider {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.charactersheet-aria img {
+	width: 25%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .charactersheet-aria .row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	flex-basis: 100%;
 }
 
 .charactersheet-aria .hr {
 	border-top: 1px solid black;
-	padding-top: 10px;
+	align-self: center;
+	width: 100%;
 }
 
 .charactersheet-aria .title {

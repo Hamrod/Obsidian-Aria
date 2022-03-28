@@ -10,12 +10,25 @@ export class CharacterSheetRenderer extends MarkdownRenderChild {
 			cls: "charactersheet-aria",
 		});
 
+		const divider = this.characterSheetE1.createDiv({
+			cls: "divider",
+		});
+
+		divider.createDiv({
+			cls: "hr",
+		});
+
 		const test = new Image();
-		test.src = "images/logoAria V2.webp";
+		test.src =
+			"https://raw.githubusercontent.com/Hamrod/Obsidian-Aria/master/images/logoAria%20V2.webp";
 
-		this.characterSheetE1.appendChild(test);
+		divider.appendChild(test);
 
-		const upDiv = this.characterSheetE1.createDiv({ cls: "row hr" });
+		divider.createDiv({
+			cls: "hr",
+		});
+
+		const upDiv = this.characterSheetE1.createDiv({ cls: "row" });
 
 		const upLeftDiv = upDiv.createDiv();
 
